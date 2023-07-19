@@ -89,7 +89,7 @@
 }
 .banner-logo{
     font-family: Work Sans;
-    font-size: 95px;
+    font-size:6rem;
     font-weight: 800;
     color: #d6178a;
     margin-top: 0px;
@@ -298,4 +298,109 @@ gamer-description{
 .info-container{
     display: flex;
     align-items: center;
+}
+/* media-query */
+@media screen and (max-width:576px) {
+    header{
+        text-align: center;
+        justify-content: center;
+    }
+    .nav{
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+    .nav-content{
+        flex-direction: column;
+    }
+    .container{
+        justify-content: center;
+    }
+    .banner{
+        flex-direction: column;
+        padding: 10px 10px 10px 10px;
+    }
+    .banner-content{
+        width: 100%;
+        padding-top: .8rem;
+    }
+    .banner-logo{
+    font-size: 4rem;
+    }
+    .gamer{
+        flex-direction: column;
+        margin: .8rem;
+    }
+    .gamer-details{
+        text-align: center;
+        margin-top:0px;
+    }
+    .online-games{
+        margin:10px;
+    }
+    .game-image{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .game-collage>img{
+        width: 95%;
+        height: 90%;
+        gap:1rem;
+    }
+    .play-online{
+        flex-direction: column;
+        margin: 10px;
+        text-align: center;
+    }
+    .online-img{
+        width:17rem;
+        height: 17rem;
+        background-size:contain;
+    }
+    .online-img2{
+        width: 80%;
+        height: 100%;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0px;
+        width: 90%;
+        height: 50%;
+    }
+    .info-container>img{
+        width: 70%;
+        height: 70%;
+    }
+    .footer-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: .7rem;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .footer-icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        font-size: .7rem;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .footer-icon>a{
+        gap: 10px;
+        margin: 10px;
+        font-size: .7rem;
+        text-align: center;
+        justify-content: center;
+    }
+    .des-one{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
